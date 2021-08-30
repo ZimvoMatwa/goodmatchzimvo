@@ -48,7 +48,7 @@ while(finn) {
             rawMatchArray.pop();} else {rawMatchArray.shift()}
             // console.log("shifting last digit")
             console.log(rawMatchArray.length)
-            if (rawMatchArray.length == 2) {console.log(`done ${rawMatchArray}`); finn = false; return finn} else {console.log(`raw len == ${rawMatchArray.length} `)}
+            if (rawMatchArray.length == 2) { if(parseInt(rawMatchArray[0]+rawMatchArray[1]) >= 80){console.log(`${playerOne} and ${playerTwo} ${parseInt(rawMatchArray[0]+rawMatchArray[1])}% good match`)} else{`${playerOne} and ${playerTwo} match ${parseInt(rawMatchArray[0]+rawMatchArray[1])}%`} console.log(`done ${rawMatchArray}`); finn = false; return finn} else {console.log(`raw len == ${rawMatchArray.length} `)}
         }
 }
 
